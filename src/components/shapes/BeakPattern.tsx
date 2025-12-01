@@ -2,9 +2,9 @@ import BasicShapes from "./BasicShapes"
 
 const BeakPattern = () => {
   return (
-    <div className="flex flex-nowrap gap-[5%]">
-        <div className="w-[20%]"><BasicShapes type="circle"/></div>
-        <div className="w-[12.5%] rotate-90"><BasicShapes type="triangle"/></div>
+    <div className="flex flex-nowrap gap-[5%] origin-center ">
+        <div className="w-full aspect-square"><BasicShapes type="circle"/></div>
+        <div className=" w-full rotate-90"><BasicShapes type="triangle"/></div>
     </div>
   )
 }
