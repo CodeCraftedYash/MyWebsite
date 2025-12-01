@@ -1,8 +1,8 @@
 import BasicShapes from "./BasicShapes";
 
-const SqaurePattern = () => {
+const SquarePattern = () => {
   return (
-    <div className="w-[20%] aspect-square mt-20 ml-20 flex flex-col flex-nowrap">
+    <div className="aspect-square flex flex-col flex-nowrap origin-center">
       <div className="w-[15%] ml-[60%]">
         <BasicShapes type="square" />
       </div>
@@ -16,4 +16,4 @@ const SqaurePattern = () => {
   );
 };
 
-export default SqaurePattern;
+export default SquarePattern;
