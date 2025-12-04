@@ -11,7 +11,7 @@ const BasicShapes = ({ type = "circle" }: shapeType) => {
       className="bg-(--color-shapes) aspect-square h-fit"
       style={{ boxShadow: "var(--box-shadow)" }}
     ></div>,
-    <div style={{ filter: "drop-shadow(var(--drop-shadow))" }}>
+    <div style={{ filter: "var(--drop-shadow)" }}>
         <div
           className="bg-(--color-shapes) aspect-square h-fit"
           style={{
