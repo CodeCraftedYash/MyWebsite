@@ -34,6 +34,7 @@ const PeakcockSvg = () => {
     tl.to(".peacockBody", {
       drawSVG: "100%",
       duration: 1,
+      delay:0.5,
     })
       .to(
         ".peacockHead",
