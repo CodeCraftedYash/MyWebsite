@@ -1,4 +1,21 @@
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import DrawSVGPlugin from "gsap/DrawSVGPlugin";
+
+gsap.registerPlugin(DrawSVGPlugin)
+
 const LineSvg = () => {
+  const ref = useRef<SVGPathElement>(null);
+  useGSAP(()=>{
+    gsap.set(ref.current,{
+      drawSVG:0
+    })
+    gsap.to(ref.current,{
+    drawSVG:"100%",
+    duration:1      
+    })
+  })
   return (
     <div>
       <svg
@@ -9,47 +26,11 @@ const LineSvg = () => {
         <g filter="url(#filter0_d_190_52)">
           <path
             d="M19.0776 1.70891C19.0776 1.70891 -16.9224 144.209 63.0776 215.709C143.078 287.209 247.578 240.709 247.578 240.709"
-            stroke="#756E2B"
+            stroke="var(--color-shapes)"
             strokeWidth="14"
+            ref={ref}
           />
         </g>
-        <defs>
-          <filter
-            id="filter0_d_190_52"
-            x="0"
-            y="0"
-            width="254.417"
-            height="270.57"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="4" />
-            <feGaussianBlur stdDeviation="2" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_190_52"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_190_52"
-              result="shape"
-            />
-          </filter>
-        </defs>
       </svg>
     </div>
   );
