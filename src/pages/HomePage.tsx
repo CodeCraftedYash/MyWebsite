@@ -3,6 +3,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import HeroSection from "../sections/heroSection/HeroSection";
+import Design from "../layouts/hero/Design";
 
 gsap.registerPlugin(useGSAP,ScrollTrigger, ScrollSmoother);
 
@@ -24,6 +26,10 @@ const HomePage = () => {
   return (
     <div ref={main} id="smooth-wrapper">
       <div id="smooth-content">
+        <div className="relative">
+          <HeroSection />
+          <Design />
+        </div>
       </div>
     </div>
   );
