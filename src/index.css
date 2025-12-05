@@ -1,1 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
 @import "tailwindcss";
+:root {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  --color-primary: #ffffff;
+  --color-secondary: #efefef;
+  --color-surface: #d1a062;
+  --color-accent: #3fbcff;
+  --color-shapes: #668054;
+  --color-blue-shade: #0072be;
+  --color-text-dark: rgb(19, 19, 19);
+  --color-text-light: white;
+  --color-shadow-light:rgba(0, 0, 0, 0.882);
+  --border-radius: 0.8rem;
+  --gradient-blue: linear-gradient(
+    to bottom,
+    var(--color-accent),
+    var(--color-blue-shade)
+  );
+  --gradient-bg: linear-gradient(
+    to bottom right,
+    var(--color-primary) 50%,
+    var(--color-secondary) 50%
+    );
+  --box-shadow:  0 3px 5px 3px rgba(0, 0, 0, 0.342),
+    3px 0px 5px 3px rgba(0, 0, 0, 0.347);
+  --drop-shadow: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.582) ) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.644) );
+  --font-size-title: 3.5rem;
+  --font-size-base: 1rem;
+  --font-size-heading: 1.25rem;
+  --font-size-sub-heading: 1.1rem;
+  --font-size-small: 0.8rem;
+  --font-size-extra-small:0.5rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 12px;
+    --font-size-title: 2rem;
+  }
+}
+
+h1 {
+  font-family: "Suez One", serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 110%;
+  letter-spacing: 0.2rem;
+  background-image: var(--gradient-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(2px 1px 1px var(--color-shadow-light));
+}
+
+h2 {
+  font-size: var(--font-size-heading);
+}
+h3 {
+  font-size: var(--font-size-base);
+  font-weight: 400;
+}
