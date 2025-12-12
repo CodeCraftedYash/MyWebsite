@@ -21,7 +21,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="grow min-h-0 flex items-start justify-center md:justify-end">
-          <div className="basis-1/4 mt-4 -mr-[15%] md:mr-[15%]"><HeroButtons /></div>
+          <div className="basis-1/4 mt-4 -mr-[40%] md:mr-[15%]"><HeroButtons /></div>
         </div>
       </div>
       <div className="grow flex justify-end items-end z-20">
