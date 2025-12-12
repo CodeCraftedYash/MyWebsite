@@ -4,31 +4,44 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import HeroSection from "../sections/heroSection/HeroSection";
-import Design from "../layouts/hero/Design";
+import DesignHero from "../layouts/hero/DesignHero";
+import AboutSection from "../sections/aboutSection/AboutSection";
+import DesignAbout from "../layouts/about/DesignAbout";
+import ProjectSection from "../sections/projectSection/ProjectSection";
 
-gsap.registerPlugin(useGSAP,ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 
 const HomePage = () => {
   const main = useRef(null);
-  const smoother = useRef<ScrollSmoother | null>(null)
+  const smoother = useRef<ScrollSmoother | null>(null);
 
-  useGSAP(() => {
-    smoother.current = ScrollSmoother.create({
-      smooth: 1,
-      effects: true,
-    });
+  useGSAP(
+    () => {
+      smoother.current = ScrollSmoother.create({
+        smooth: 2,
+        effects: true,
+      });
 
-    return () => {
-      smoother.current?.kill();
-    };
-  }, { scope: main });
+      return () => {
+        smoother.current?.kill();
+      };
+    },
+    { scope: main }
+  );
 
   return (
     <div ref={main} id="smooth-wrapper">
       <div id="smooth-content">
         <div className="relative">
           <HeroSection />
-          <Design />
+          <DesignHero />
+        </div>
+        <div className="relative">
+          <AboutSection />
+          <DesignAbout />
+        </div>
+        <div className="relative">
+          <ProjectSection />
         </div>
       </div>
     </div>
