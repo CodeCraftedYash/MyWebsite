@@ -1,13 +1,13 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import type { RefObject } from "react";
+import type { fadeInHookType } from "../types/fadeInHookType";
 
-export const useFadeInAnimation = <T extends HTMLElement>(
-  ref: RefObject<T | null>,
-  duration: number,
-  delay: number = 0,
-  x: number = 0,
-  y: number = 0,
+export const useFadeInAnimation : fadeInHookType = (
+  ref,
+  duration,
+  delay,
+  x,
+  y,
 ) => {
   useGSAP(() => {
     if (!ref.current) return;
@@ -21,5 +21,5 @@ export const useFadeInAnimation = <T extends HTMLElement>(
       x:0,
       y:0
     });
-  });
+  },[ref,duration,delay,x,y]);
 };
