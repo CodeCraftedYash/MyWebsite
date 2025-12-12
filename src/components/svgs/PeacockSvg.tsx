@@ -5,7 +5,7 @@ import DrawSVGPlugin from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(useGSAP, DrawSVGPlugin);
 const PeakcockSvg = () => {
   useGSAP(() => {
-    gsap.set(".peacockFeatherLeft", {
+    gsap.set(".peacockFeatherLeft" , {
       autoAlpha: 0,
     });
     gsap.set(".peacockFeatherRight", {
@@ -42,7 +42,7 @@ const PeakcockSvg = () => {
           drawSVG: "100%",
           duration: 1,
         },
-        "-=0.3"
+        "<0.2"
       )
       .to(
         ".peacockLimbs",
@@ -50,7 +50,7 @@ const PeakcockSvg = () => {
           drawSVG: "100%",
           duration: 1,
         },
-        "-=0.3"
+        "<0.3"
       )
       .to(
         ".peacockCrown",
@@ -58,7 +58,7 @@ const PeakcockSvg = () => {
           drawSVG: "100%",
           duration: 1,
         },
-        "-=0.3"
+        "<"
       )
       .to(
         ".peacockFeatherOutline",
@@ -67,26 +67,27 @@ const PeakcockSvg = () => {
           stagger: { each: 0.1, from: "random" },
           duration: 1,
         },
-        "-=0.3"
+        "<"
       )
       .to(".peacockFeatherLeft", {
         autoAlpha: 1,
-        duration: 0.3,
+        duration: 0.6,
         ease: "back.in",
       })
       .to(".peacockFeatherTop", {
         autoAlpha: 1,
-        duration: 0.3,
+        duration: 0.6,
         ease: "back.in",
-      })
+      },"<")
       .to(".peacockFeatherRight", {
         autoAlpha: 1,
-        duration: 0.3,
+        duration: 0.6,
         ease: "back.in",
-      })
+      },"<")
       .to(".peacockFeatherOutline", {
         autoAlpha: 0,
         duration: 0.3,
+        ease: "back.out",
       });
     tl.add(() => {
       gsap.to(".peacockFeatherLeft", {
