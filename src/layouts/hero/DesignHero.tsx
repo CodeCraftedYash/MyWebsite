@@ -4,7 +4,7 @@ import HollowCirclePattern from "../../components/shapes/HollowCirclePattern"
 import SquarePattern from "../../components/shapes/SquarePattern"
 import useMotionAnimationHook from "../../hooks/useMotionAnimationHook"
 
-const Design = () => {
+const DesignHero = () => {
   const ref = useRef<HTMLDivElement|null>(null)
   useMotionAnimationHook(ref,"[data-anim]",12,5,5,1,true,3,2);
   return (
@@ -26,4 +26,4 @@ const Design = () => {
   )
 }
 
-export default Design
+export default DesignHero
