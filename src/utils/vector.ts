@@ -7,7 +7,7 @@
  */
 export const Vectorize = (rotation:number) => {
     const r = rotation % 360;
-    const radians = r * (Math.PI / 100);
+    const radians = r * (Math.PI / 180);
     const x:number = Math.cos(radians);
     const y:number = Math.sin(radians);
     return {x,y};
