@@ -23,7 +23,7 @@ const Shine = ({
   });
   return (
     <div
-      className="relative overflow-hidden rounded-(--border-radius)"
+      className="relative overflow-hidden rounded-(--border-radius) h-full"
       ref={containerRef}
     >
       {children}
