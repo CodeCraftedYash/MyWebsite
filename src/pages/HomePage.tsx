@@ -6,7 +6,6 @@ import { useRef } from "react";
 import HeroSection from "../sections/heroSection/HeroSection";
 import DesignHero from "../layouts/hero/DesignHero";
 import AboutSection from "../sections/aboutSection/AboutSection";
-import DesignAbout from "../layouts/about/DesignAbout";
 import ProjectSection from "../sections/projectSection/ProjectSection";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
@@ -36,13 +35,8 @@ const HomePage = () => {
           <HeroSection />
           <DesignHero />
         </div>
-        <div className="relative">
           <AboutSection />
-          <DesignAbout />
-        </div>
-        <div className="relative">
           <ProjectSection />
-        </div>
       </div>
     </div>
   );
