@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import { useFadeInAnimation } from "../../hooks/useFadeInAnimation";
 import { useScrollTrigger } from "../../hooks/useScrollTrigger";
 import AboutMain from "../../layouts/about/AboutMain";
+import DesignAbout from "../../layouts/about/DesignAbout";
 
 const AboutSection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -14,7 +15,7 @@ const AboutSection = () => {
   );
   return (
     <div
-      className="min-h-screen bg-(--color-primary) bg-linear-120 from-(--color-primary) to-(--color-secondary)"
+      className="min-h-screen bg-(--color-primary) bg-linear-120 from-(--color-primary) to-(--color-secondary) relative overflow-hidden"
       ref={ref}
     >
       {view && (
@@ -30,6 +31,7 @@ const AboutSection = () => {
           </div>
         </div>
       )}
+      <DesignAbout />
     </div>
   );
 };
