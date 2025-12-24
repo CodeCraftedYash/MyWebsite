@@ -1,0 +1,33 @@
+import { RiHomeLine, RiAccountCircle2Line, RiArticleLine, RiCodeSSlashFill, RiMessage3Line, RiVipDiamondLine } from "react-icons/ri";
+export const navItems = [
+    {
+        text:"Home",
+        icons:RiHomeLine,
+        to:"#home"
+    },
+    {
+        text:"About",
+        icons:RiAccountCircle2Line,
+        to:"#about"
+    },
+    {
+        text:"Projects",
+        icons:RiArticleLine,
+        to:"#projects"
+    },
+    {
+        text:"Skills",
+        icons:RiCodeSSlashFill,
+        to:"#skills"
+    },
+    {
+        text:"Experience",
+        icons:RiVipDiamondLine,
+        to:"#experience"
+    },
+    {
+        text:"Contact",
+        icons:RiMessage3Line,
+        to:"#contact"
+    },
+]
