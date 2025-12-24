@@ -7,10 +7,10 @@ import Profile from "../../layouts/hero/Profile";
 
 const HeroSection = () => {
   const ref = useRef(null);
-  useFadeInAnimation(ref,0.5,0.1,0,10)
+  useFadeInAnimation(ref,0.5,true,0.1,0,10)
   return (
     <div className="flex flex-col bg-(--color-primary) h-dvh"
-    style={{backgroundImage:"var(--gradient-bg)"}}>
+    style={{backgroundImage:"var(--gradient-bg)"}} id="home">
     <div className="h-16 md:h-0"></div>
     <div className=" grow  flex flex-col md:flex-row px-[2vw]">
       <div className="basis-[50%] flex flex-col z-20">
