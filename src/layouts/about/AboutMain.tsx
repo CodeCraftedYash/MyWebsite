@@ -7,8 +7,8 @@ import { useFadeInAnimation } from "../../hooks/useFadeInAnimation";
 const AboutMain = () => {
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
-  useFadeInAnimation(ref1, 1, 0.3, -100, 0);
-  useFadeInAnimation(ref2, 1, 0.3, 100, 0);
+  useFadeInAnimation(ref1, 0.5,true, 0.1, -100, 0);
+  useFadeInAnimation(ref2, 0.5,true, 0.1, 100, 0);
   return (
     <div className="w-[85%] mx-auto flex flex-col justify-between h-[70dvh] md:flex-row gap-5">
       <div className="basis-1/4 sm:w-[70%] md:w-full md:basis-[30%] mx-auto" ref={ref1}><AboutCards text={text[0]} pos="left"/></div>
