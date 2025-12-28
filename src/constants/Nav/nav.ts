@@ -11,14 +11,14 @@ export const navItems = [
         to:"#about"
     },
     {
-        text:"Projects",
-        icons:RiArticleLine,
-        to:"#projects"
-    },
-    {
         text:"Skills",
         icons:RiCodeSSlashFill,
         to:"#skills"
+    },
+    {
+        text:"Projects",
+        icons:RiArticleLine,
+        to:"#projects"
     },
     {
         text:"Experience",
