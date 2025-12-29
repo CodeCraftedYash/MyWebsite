@@ -9,7 +9,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { RefObject } from "react";
 gsap.registerPlugin(ScrollTrigger)
-export const useAutoHideNav = (allowAutoHide:RefObject<boolean>,navRef:RefObject<HTMLDivElement | null>) => {
+export const useAutoHideNav = (navRef:RefObject<HTMLDivElement | null>) => {
     useGSAP(()=>{
     if(!navRef.current) return;
     const showAnim = gsap.from(navRef.current,{
@@ -23,7 +23,6 @@ export const useAutoHideNav = (allowAutoHide:RefObject<boolean>,navRef:RefObject
         start:0,
         end:"max",
         onUpdate(self) {
-            if(!allowAutoHide.current) return;
             if(self.direction === 1){
                 showAnim.reverse();
             }
