@@ -9,15 +9,13 @@ const HeroSection = () => {
   const ref = useRef(null);
   useFadeInAnimation(ref,0.5,true,0.1,0,10)
   return (
-    <div className="flex flex-col bg-(--color-primary) h-dvh"
-    style={{backgroundImage:"var(--gradient-bg)"}} id="home">
-    <div className="h-16 md:h-0"></div>
-    <div className=" grow  flex flex-col md:flex-row px-[2vw]">
+    <div className="flex flex-col bg-(--color-background) h-dvh" id="home">
+    <div className=" grow  flex flex-col md:flex-row px-[2vw] pt-12">
       <div className="basis-[50%] flex flex-col z-20">
         <div className="basis-[55%] md:basis-[50%] flex items-end justify-center md:justify-end">
           <div className="flex flex-nowrap gap-5 items-center justify-center md:items-end md:justify-end">
           <div><Profile /></div>
-          <div className="basis-[40%]" ref={ref}><Header /></div>
+          <div className="basis-[40%] text-(--color-text-dark)" ref={ref}><Header /></div>
           </div>
         </div>
         <div className="grow min-h-0 flex items-start justify-center md:justify-end">
