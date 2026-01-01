@@ -11,14 +11,14 @@ const AboutSection = () => {
 
   return (
     <div
-      className="min-h-dvh bg-(--color-primary) bg-linear-120 from-(--color-primary) to-(--color-secondary) relative overflow-hidden"
+      className="min-h-dvh bg-(--color-background) relative overflow-hidden"
       ref={refContainer}
       id="about"
     >
         <div
           className="flex flex-col gap-20 pt-10 relative overflow-hidden"
         >
-           {view && <div className="relative z-50">
+           {view && <div className="relative z-50 text-(--color-text-dark)">
             <Header text="About Me" />
           </div>}
           {view && <div className="relative z-50">
