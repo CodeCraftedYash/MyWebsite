@@ -22,7 +22,7 @@ const AboutCards = ({
       ? "left-0 -translate-4"
       : "right-0 translate-x-4 -translate-y-4");
   return (
-    <div className="relative text-white" ref={ref}>
+    <div className="relative text-(--color-text-dark) tracking-wide" ref={ref}>
       <div className="bg-(--color-surface) rounded-(--border-radius) p-4 z-30 relative">
         <h4>{text}</h4>
       </div>

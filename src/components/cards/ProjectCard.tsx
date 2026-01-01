@@ -49,7 +49,7 @@ const ProjectCard = ({
           />
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 text-(--color-text-dark)">
           <h3 className="font-bold tracking-wide ">{title}</h3>
           <h3>{desc}</h3>
            <h3>
