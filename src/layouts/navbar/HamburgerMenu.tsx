@@ -60,7 +60,7 @@ const HamburgerMenu = ({ active }: { active: string }) => {
         {open ? <RiCloseLargeFill /> : <GiHamburgerMenu />}
       </div>
       <div
-        className="flex flex-col gap-5 absolute top-10 -right-9 bg-(--color-primary)/80 pr-10 pl-2 py-2 rounded-(--border-radius)"
+        className="flex flex-col gap-5 absolute top-10 -right-9 bg-(--color-surface)/80 pr-10 pl-2 py-2 rounded-(--border-radius)"
         ref={refMenu}
       >
         {navItems.map((el, index) => (
