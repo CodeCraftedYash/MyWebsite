@@ -4,6 +4,7 @@ import { useSectionTracker } from "../../hooks/useSectionTracker";
 import { scrollIntoView } from "../../utils/scrollIntoView";
 import HamburgerMenu from "./HamburgerMenu";
 import { useAutoHideNav } from "../../hooks/useAutoHideNav";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar = () => {
   const HeaderRef = useRef(null);
@@ -20,7 +21,7 @@ const Navbar = () => {
       >
         Yash Mishra
       </div>
-      <nav className="hidden md:flex gap-5 ">
+      <nav className="hidden md:flex gap-5 items-center ">
         {navItems.map((el, index) => (
           <div
             className="flex flex-nowrap items-center gap-1 font-bold hover:cursor-pointer hover:scale-120 transition-all duration-200 ease-in-out "
@@ -36,8 +37,9 @@ const Navbar = () => {
             <h3>{el.text}</h3>
           </div>
         ))}
+        <ThemeSwitcher />
       </nav>
-      <div className="md:hidden"><HamburgerMenu active={active} /></div>
+      <div className="md:hidden flex gap-5 flex-row-reverse items-center"><HamburgerMenu active={active} /><ThemeSwitcher /></div>
     </header>
   );
 };
