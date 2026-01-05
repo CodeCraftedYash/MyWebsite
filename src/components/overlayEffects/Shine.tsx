@@ -28,7 +28,7 @@ const Shine = ({
     >
       {children}
       <div
-        className="absolute h-[150%] left-0 top-1/2 -translate-y-1/2
+        className="absolute h-full scale-y-200 left-0 top-1/2 -translate-y-1/2
 "
         style={{ width: width, transform: `rotate(${rotation}deg)` }}
         ref={ref}
