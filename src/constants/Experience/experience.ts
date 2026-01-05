@@ -1,13 +1,6 @@
-type experienceData = {
-    cName : string;
-    position : string;
-    period : string;
-    accomplishments: string[];
-    img: string;
-    cLink: string;
-}
 import branduckLogo from '../../assets/branduckLogo.jpg';
-export const experienceData:experienceData[] = [
+import { type experienceDataType } from '../../types/experienceData';
+export const experienceData:experienceDataType[] = [
     {
     cName:"Branduck",
     position:"WebDeveloper Intern",
