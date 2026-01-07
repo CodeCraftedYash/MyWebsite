@@ -14,7 +14,7 @@ const ExperienceSection = () => {
   useCardsSlideIn(cardsRef);
   const data = experienceData;
   return (
-    <div className="min-h-dvh py-10 flex flex-col gap-10 z-50 relative bg-(--color-background)" id="experience" ref={ref}>
+    <div className="min-h-dvh py-20 flex flex-col gap-10 z-50 relative bg-(--color-background)" id="experience" ref={ref}>
       <div className="text-(--color-text-dark) mb-12">{active && <Header text="Experience"/>}</div>
       <div className="w-full md:w-[80%] mx-auto">
         <div className="w-[80%] mx-auto flex flex-col gap-20" ref={cardsRef}>{
