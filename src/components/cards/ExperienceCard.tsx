@@ -18,9 +18,9 @@ const ExperienceCard = ({data}:{data:experienceDataType}) => {
             ))
         }</ul>
         </div>
-          <div className="w-full relative group hover:cursor-pointer" onClick={()=>openURL(data.cLink)}>
+          <div className="w-full group hover:cursor-pointer relative" onClick={()=>openURL(data.cLink)}>
             <img src={data.img} alt="company image" className="w-full aspect-square object-cover rounded-(--border-radius) overflow-hidden" />
-            <RiArrowRightUpBoxLine className="text-4xl absolute top-5 right-5 opacity-70 group-hover:text-(--color-accent)" />
+            <RiArrowRightUpBoxLine className="text-4xl absolute top-5 right-5 opacity-70 text-(--color-background) group-hover:text-(--color-accent)" />
           </div>
         
     </div>
