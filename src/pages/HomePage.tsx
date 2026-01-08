@@ -7,6 +7,11 @@ import HeroSection from "../sections/heroSection/HeroSection";
 import DesignHero from "../layouts/hero/DesignHero";
 import AboutSection from "../sections/aboutSection/AboutSection";
 import ProjectSection from "../sections/projectSection/ProjectSection";
+import Navbar from "../layouts/navbar/Navbar";
+import SkillsSection from "../sections/skillsSection/SkillsSection";
+import ExperienceSection from "../sections/experienceSection/ExperienceSection";
+import ContactSection from "../sections/contactSection/ContactSection";
+import Footer from "../layouts/footer/Footer";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 
@@ -30,13 +35,18 @@ const HomePage = () => {
 
   return (
     <div ref={main} id="smooth-wrapper">
+      <Navbar />
       <div id="smooth-content">
         <div className="relative">
           <HeroSection />
           <DesignHero />
         </div>
           <AboutSection />
+          <SkillsSection />
           <ProjectSection />
+          <ExperienceSection />
+          <ContactSection />
+          <Footer />
       </div>
     </div>
   );
