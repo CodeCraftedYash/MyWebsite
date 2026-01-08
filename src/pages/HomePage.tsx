@@ -22,7 +22,7 @@ const HomePage = () => {
   useGSAP(
     () => {
       smoother.current = ScrollSmoother.create({
-        smooth: 2,
+        smooth: 1.6,
         effects: true,
       });
 
