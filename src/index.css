@@ -4,9 +4,10 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  --color-primary: #ffffff;
-  --color-secondary: #efefef;
-  --color-surface: #d1a062;
+  --color-background: #f6f6f6;
+  --color-background-alt: #111827;
+  --color-shapes: #704645;
+  --color-surface: #eaeaea;
   --color-accent: #3fbcff;
   --color-shapes: #668054;
   --color-blue-shade: #0072be;
@@ -19,14 +20,9 @@
     var(--color-accent),
     var(--color-blue-shade)
   );
-  --gradient-bg: linear-gradient(
-    to bottom right,
-    var(--color-primary) 50%,
-    var(--color-secondary) 50%
-    );
-  --box-shadow:  0 3px 5px 3px rgba(0, 0, 0, 0.342),
-    3px 0px 5px 3px rgba(0, 0, 0, 0.347);
-  --drop-shadow: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.582) ) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.644) );
+  --box-shadow:  0 3px 10px  rgba(0, 0, 0, 0.342),
+    3px 0px 10px  rgba(0, 0, 0, 0.347);
+  --drop-shadow: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.582));
   --font-size-title: 3.5rem;
   --font-size-base: 1rem;
   --font-size-heading: 2rem;
@@ -63,5 +59,24 @@ h2 {
 }
 h3 {
   font-size: var(--font-size-base);
-  font-weight: 400;
+}
+
+h4 {
+  font-size: var(--font-size-base);
+}
+
+.logo{
+  font-size: var(--font-size-heading);
+  font-family: Suez one, sans-serif;
+  font-weight: 500;
+}
+
+[dark-theme="dark"] {
+  --color-background: #0f172a;
+  --color-background-alt: #111827;
+  --color-shapes: #6f7045;
+  --color-surface: #2a2d55;
+  --color-text-dark: rgb(255, 255, 255);
+  --color-text-light: rgb(0, 0, 0);
+  --color-shadow-light:rgba(249, 249, 249, 0.592);
 }
