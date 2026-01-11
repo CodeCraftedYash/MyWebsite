@@ -39,7 +39,7 @@ const Navbar = () => {
         ))}
         <ThemeSwitcher />
       </nav>
-      <div className="md:hidden flex gap-5 flex-row-reverse items-center"><HamburgerMenu active={active} /><ThemeSwitcher /></div>
+      <div className="md:hidden flex gap-5 flex-row-reverse items-center"><HamburgerMenu/><ThemeSwitcher /></div>
     </header>
   );
 };
