@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { useFadeInAnimation } from "../../hooks/useFadeInAnimation";
 import { useRef } from "react";
 import { scrollIntoView } from "../../utils/scrollIntoView";
+import resume from '../../assets/resume.pdf';
 
 const HeroButtons = () => {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -13,7 +14,7 @@ const HeroButtons = () => {
   return (
     <div className="flex flex-nowrap justify-between gap-5 items-center">
         <div ref={ref1}><Button cb={()=>scrollIntoView('#contact')} text="Hire Me" Icon={FaArrowRight}/></div>
-        <div ref={ref2}><a href="../../assets/resume.pdf" target="_blank"  rel="noopener noreferrer" className="flex items-center h-full px-2 py-2 rounded-(--border-radius) text-white gap-1" style={{backgroundImage:"var(--gradient-blue)",boxShadow:"var(--box-shadow)"}}>Resume <FaFileDownload /> </a></div>
+        <div ref={ref2}><a href={resume} download className="flex items-center h-full px-2 py-2 rounded-(--border-radius) text-white gap-1" style={{backgroundImage:"var(--gradient-blue)",boxShadow:"var(--box-shadow)"}}>Resume <FaFileDownload /> </a></div>
     </div>
   )
 }
