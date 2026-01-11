@@ -10,7 +10,7 @@ const ContactSection = () => {
   useScrollTrigger(ref,"top center","bottom bottom",true,false,false,()=>setActive(true))
   return (
     <div
-      className="min-h-dvh bg-(--color-background) text-(--color-text-dark) overflow-hidden flex flex-col gap-20 py-20 relative z-50"
+      className="min-h-[90dvh] md:min-h-dvh bg-(--color-background) text-(--color-text-dark) overflow-hidden flex flex-col gap-20 py-20 relative z-50"
       id="contact"
       ref={ref}
     >
