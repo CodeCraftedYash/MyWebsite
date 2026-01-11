@@ -34,7 +34,7 @@ const HomePage = () => {
   );
 
   return (
-    <div ref={main} id="smooth-wrapper">
+    <div ref={main} id="smooth-wrapper" className="w-dvw overflow-hidden">
       <Navbar />
       <div id="smooth-content">
         <div className="relative">
