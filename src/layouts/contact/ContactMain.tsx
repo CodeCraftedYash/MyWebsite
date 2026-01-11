@@ -35,7 +35,7 @@ const ContactMain = () => {
             <span>TOGETHER</span>
           </h5>
           <h4 className="font-light">Got a project in mind? Let's create somthing amazing together. Drop me a message !</h4>
-          <div className="border-2 w-fit px-1.5 py-0.5 rounded-(--border-radius) border-(--color-text-dark)/40 transition-all duration-200 ease-in-out hover:scale-110"><MailMe /></div>
+          <div className="border-2 mb-2 w-fit px-1.5 py-0.5 rounded-(--border-radius) border-(--color-text-dark)/40 transition-all duration-200 ease-in-out hover:scale-110"><MailMe /></div>
           <SocialMedia />
       </div>
   )
