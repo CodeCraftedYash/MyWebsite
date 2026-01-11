@@ -6,11 +6,14 @@ import { RiCloseLargeFill } from "react-icons/ri";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useSectionTracker } from "../../hooks/useSectionTracker";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HamburgerMenu = ({ active }: { active: string }) => {
+const HamburgerMenu = () => {
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("home");
+  useSectionTracker(setActive);
   const refMenu = useRef<HTMLDivElement | null>(null);
   const tlRef = useRef<gsap.core.Timeline>(null);
   const closeOnScroll = useRef(false);
