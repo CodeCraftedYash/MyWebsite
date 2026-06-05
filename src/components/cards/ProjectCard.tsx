@@ -39,7 +39,7 @@ const ProjectCard = ({
         <div className="w-full rounded-(--border-radius) aspect-video">
           <video
             ref={ref}
-            src={vid}
+            src={vid ? vid :"nothing"}
             poster={image}
             muted
             loop
