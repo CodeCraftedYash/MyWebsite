@@ -3,7 +3,7 @@ import instagramLogo from '../../assets/instaLogo.svg';
 import githubLogo from '../../assets/github.svg';
 
 export const contact = [
-    {text:"Instagram",icon:instagramLogo,link:"https://www.instagram.com/yash_coding/"},
+    {text:"Instagram",icon:instagramLogo,link:"https://www.instagram.com/yash.0_0.mishra/"},
     {text:"Github",icon:githubLogo,link:"https://github.com/CodeCraftedYash"},
     {text:"LinkedIn",icon:linkedInLogo,link:"https://www.linkedin.com/in/yash-mishra1000/"},
 ]
