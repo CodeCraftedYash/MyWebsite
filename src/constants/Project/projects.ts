@@ -1,7 +1,8 @@
 import type { projectDataType } from "../../types/projectCard";
 import img1 from '../../assets/trackle.webp'
 import img2 from '../../assets/weatherApp.webp';
-
+import img3 from '../../assets/dataScraper.webp';
+import img4 from '../../assets/treeType.webp';
 /**
  * cannot find module error !
  * create and paste this into src/global.d.ts
@@ -32,6 +33,40 @@ export const projectsData: projectDataType[] = [
     ],
     errMsg: "",
   },
+
+    {
+    title: "TreeType",
+    desc: "A typing practice platform designed to improve typing speed and accuracy through real-time performance tracking, statistics, and interactive typing challenges.",
+    image: img4,
+    vid: "https://res.cloudinary.com/yashmishra/video/upload/v1780674622/WhatsApp_Video_2026-06-05_at_9.19.30_PM_zzebws.mp4",
+    open: "https://tree-type.vercel.app/",
+    git: "https://github.com/CodeCraftedYash/tree-type",
+    skills: [
+      "React",
+      "TypeScript",
+      // TODO: Add remaining technologies
+    ],
+    errMsg: "",
+  },
+
+  
+  {
+    title: "Dynamic Web Scraper",
+    desc: "Built a configuration-driven web scraping framework using Node.js, Axios, and Cheerio that automatically traverses paginated pages, extracts structured data using custom selectors, and exports aggregated results to JSON with built-in rate limiting and error handling.",
+    image: img3,
+    vid: "",
+    open: "https://github.com/CodeCraftedYash/dynamic-web-scraper",
+    git: "https://github.com/CodeCraftedYash/dynamic-web-scrapper",
+    skills: [
+      "Node.js",
+      "TypeScript",
+      "Cheerio",
+      // TODO: Add remaining technologies
+    ],
+    errMsg: "",
+  },
+
+
   {
   title: "Weather App",
   desc: "A weather forecast app built with TypeScript that shows current weather data and trends using an external weather API.",
@@ -43,5 +78,5 @@ export const projectsData: projectDataType[] = [
     "React", "TypeScript", "API Integration", "Tailwind CSS"
   ],
   errMsg: ""
-}
+},
 ];
